@@ -1,13 +1,18 @@
 {
-  "name": "custom-project",
+  "name": "custom-project-gc",
   "version": "0.1.0",
-  "private": true,
+  "description": "自定义导出设置",
+  "main": "lib/customset.umd.min.js",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name customset --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "sortablejs": "^1.10.2",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
   },
